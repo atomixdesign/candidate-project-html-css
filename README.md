@@ -1,5 +1,5 @@
-# Atomix - Trial for Frontend Developers
-### Focusing on: HTML, CSS and responsive skills
+# Atomix - Trial for Frontend Developers (HTML, CSS/SCSS and JavaScript)
+### Focusing on: HTML, CSS/SCSS, JavaScript and responsive skills
 
 ## Introduction
 Hello everyone 👋🏼, firstly I would like to congratulate on being selected for a trial for our full-stack web developer role advertised on [LinkedIn](https://www.linkedin.com/jobs/view/3160453756/), and we so excited to know you better and also to find out your skills even more.
@@ -7,6 +7,9 @@ Hello everyone 👋🏼, firstly I would like to congratulate on being selected 
 In regard to how we have structured the trial will be in two parts. This trial will test your frontend skills (HTML, CSS and responsive skills). 
 
 #### Step 2 (NOT IN THIS REPOSITORY) - Choose either [React](https://reactjs.org/) or [NextJS](https://nextjs.org/), or [WordPress](https://en-au.wordpress.org/download/) to complete a working website using this frontend work
+
+## Trial Instructions
+To complete this trial, you will need to create a responsive website using our creative to the closest pixel perfect layout. You can use Bootstrap and any additional JavaScript tools to complete this trial. 
 
 ## How to setup the project
 This repo is setup using [ParcelJS](https://parceljs.org/) and its really easy to setup locally. 
@@ -21,7 +24,7 @@ Here is the [creative XD designs](https://xd.adobe.com/view/9b96df8b-7468-4806-9
 The design consists of a few important sections:
 1. Header with a menu (global sections)
 2. Home banner
-3. 3 column content section
+3. Three column content section
 4. Carousel with a slider. We recommend using [Flickity](https://flickity.metafizzy.co/), but you can use any JavaScript slider carousel here which you are familiar with
 5. Team grid layout
 6. Footer with menu links (global sections)
@@ -44,4 +47,7 @@ Fork this repo and provide us with a pull request to view your work. You can als
 We recommend sending the completed pull request as soon as possible, but we would roughly estimate about a week to complete it. Please inform us if you have any concerns or clarifications with regards to the trial.
 
 ## Step 2
-[To be updated...]
+If choosing: \
+- [ReactJS path](https://github.com/atomixdesign/candidate-project-react)
+- [NextJS path](https://github.com/atomixdesign/candidate-project-next)
+- [WordPress path](https://github.com/atomixdesign/candidate-project-wordpress)
