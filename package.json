@@ -1,7 +1,6 @@
 {
   "name": "candidate-project-html-css",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Jack Hillman <jack@atomix.com.au>",
   "license": "MIT",
   "scripts": {
