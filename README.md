@@ -4,9 +4,9 @@
 ## Introduction
 Hello everyone 👋🏼, firstly I would like to congratulate on being selected for a trial for our full-stack web developer role advertised on [LinkedIn](https://www.linkedin.com/jobs/view/3160453756/), and we so excited to know you better and also to find out your skills even more.
 
-In regard to this trial, we have structured this to be in two parts:
-1. Testing your frontend skills (HTML, CSS and responsive skills)
-2. Choose either [React](https://reactjs.org/) or [NextJS](https://nextjs.org/), or [WordPress](https://en-au.wordpress.org/download/) to complete a working website using this frontend work
+In regard to how we have structured the trial will be in two parts. This trial will test your frontend skills (HTML, CSS and responsive skills). 
+
+#### Step 2 (NOT IN THIS REPOSITORY) - Choose either [React](https://reactjs.org/) or [NextJS](https://nextjs.org/), or [WordPress](https://en-au.wordpress.org/download/) to complete a working website using this frontend work
 
 ## How to setup the project
 This repo is setup using [ParcelJS](https://parceljs.org/) and its really easy to setup locally. 
