@@ -47,7 +47,7 @@ Fork this repo and provide us with a pull request to view your work. You can als
 We recommend sending the completed pull request as soon as possible, but we would roughly estimate about a week to complete it. Please inform us if you have any concerns or clarifications with regards to the trial.
 
 ## Step 2
-If choosing: \
+If choosing: 
 - [ReactJS path](https://github.com/atomixdesign/candidate-project-react)
 - [NextJS path](https://github.com/atomixdesign/candidate-project-next)
 - [WordPress path](https://github.com/atomixdesign/candidate-project-wordpress)
