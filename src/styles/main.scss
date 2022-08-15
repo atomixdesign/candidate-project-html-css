@@ -244,6 +244,10 @@ header {
       left:24%;
       right: 24%;
       color: black;
+      @media screen and (max-width: 767px){
+            
+        top: 25%;
+      }
 
       button {
         border: 1px solid transparent;
@@ -272,3 +276,45 @@ header {
     }
 
   }
+
+.three-coloumn{
+  height: 50vh;
+
+  .tc-heading{
+    text-align: center;
+    padding-top: 5%;
+    font: normal normal bold 34px/50px Montserrat;
+  }
+    .tc-content{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+      padding-left:10%;
+      padding-right: 10%;
+      align-items: baseline;
+      @media screen and (max-width: 767px){
+        flex-wrap: wrap;  
+      }
+
+      .tc-coloumn{
+        margin: 10px;
+        padding: 20px;
+        flex-basis: 33%;
+	flex-grow: 0;
+	flex-shrink: 0;
+  @media screen and (max-width: 767px){
+    flex-basis: 100%;  }
+        .image-head{
+          font-size: 15px;
+          font-weight: 600;
+        }
+        
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+  
+}
