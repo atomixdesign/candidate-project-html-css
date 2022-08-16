@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -89,11 +93,12 @@
         <button>CONTACT US</button>
       </div>
       <div class="hero-down-button">
-        <a href="#"> <img src="../src/images/Down button.svg" /></a>
+        <a href="#tc-section"> <img src="../src/images/Down button.svg" /></a>
       </div>
     </div>
     <!--    3. Three column content section -->
     <div class="three-column">
+      <a name="tc-section"></a>
       <div class="tc-heading">Three column with image</div>
       <div class="tc-content">
         <div class="tc-column">
@@ -127,7 +132,73 @@
       </div>
     </div>
 
-    <!--    4. Carousel with a slider. We recommend using [Flickity](https://flickity.metafizzy.co/), but you can use any JavaScript slider carousel here which you are familiar with -->
+    <!--    4. Carousel with a slider. We recommend using [Flickity](https://flickity.metafizzy.co/),
+      but you can use any JavaScript slider carousel here which you are familiar with -->
+    <div class="carousel-section">
+      <div class="carousel-sect-head">Carousel Section</div>
+      <div
+        class="carousel"
+        data-flickity='{ "autoPlay": true,"fullscreen":true }'
+      >
+        <div class="carousel-cell" style="background-color: #f7f7f7">
+          <div class="carousel-content">
+            <div class="caorusel-image">
+              <img src="./images/Mask Group 2.png" />
+            </div>
+            <div class="c-item">
+              <div class="carousel-head">Slide title</div>
+              <div class="carousel-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </div>
+              <div class="carousel-button">
+                <button>BUTTON</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell" style="background-color: #f7f7f7">
+          <div class="carousel-content">
+            <div class="caorusel-image">
+              <img src="./images/Mask Group 2.png" />
+            </div>
+            <div class="c-item">
+              <div class="carousel-head">Slide title</div>
+              <div class="carousel-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </div>
+              <div class="carousel-button">
+                <button>BUTTON</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell" style="background-color: #f7f7f7">
+          <div class="carousel-content">
+            <div class="caorusel-image">
+              <img src="./images/Mask Group 2.png" />
+            </div>
+            <div class="c-item">
+              <div class="carousel-head">Slide title</div>
+              <div class="carousel-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </div>
+              <div class="carousel-button">
+                <button>BUTTON</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--    5. Team grid layout -->
     <div class="team-sect">
       <div class="ts-heading">Team Section</div>
@@ -183,7 +254,7 @@
     <!--    6. Footer with menu links (global sections) -->
     <footer>
       <div class="footer-logo"><img src="./images/COMPANY LOGO.png" /></div>
-      <div class="footer-items">
+      <div class="top-row">
         <div class="footer-section">
           <div class="fs-header">About</div>
           <p class="fs-content">About menu item 1</p>
@@ -204,10 +275,37 @@
         <div class="footer-section">
           <div class="fs-header">Footer links</div>
           <p class="fs-content">Footer menu item 1</p>
-          <p class="fs-content">Footer menu item 1</p>
+          <p class="fs-content">Footer menu item 2</p>
+        </div>
+      </div>
+      <hr />
+      <div class="bottom-row">
+        <div class="company-links-sect">
+          <div class="company-links">© 2022 Company Inc.</div>
+          <div class="company-links">Terms and conditions</div>
+          <div class="company-links">Privacy policy</div>
+          <div class="company-links">Website by atomix</div>
+        </div>
+        <div class="company-social-sect">
+          <div class="company-social">
+            <img src="../src/images/facebook.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/twitter.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/instagram.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/linkedin.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/youtube.svg" />
+          </div>
         </div>
       </div>
     </footer>
     <script src="./scripts/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
