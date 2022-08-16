@@ -8,12 +8,18 @@
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
+    "@parcel/transformer-inline-string": "2.6.2",
     "@parcel/transformer-sass": "2.6.2",
     "@types/bootstrap": "^5.2.0",
-    "parcel": "^2.6.2"
+    "parcel": "^2.6.2",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "flickity": "^3.0.0",
+    "flickity-fade": "^2.0.0",
+    "rollup-plugin-html": "^0.2.1"
   }
 }

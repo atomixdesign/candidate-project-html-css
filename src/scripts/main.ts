@@ -1,3 +1,3 @@
-import * as bootstrap from 'bootstrap'
+import * as bootstrap from "bootstrap";
 
-console.log('Hello World!', bootstrap)
+console.log("Hello World!", bootstrap);

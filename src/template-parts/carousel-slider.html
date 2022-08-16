@@ -1,0 +1,89 @@
+<div class="container-fluid">
+  <h2 class="text-center">Carousel section</h2>
+</div>
+<div class="position-relative">
+  <div class="main-carousel">
+    <div class="carousel-cell">
+      <div class="row">
+        <div class="col-lg-6 carousel-image">
+          <img
+            class="img-fluid"
+            src="./images/slide1.png"
+            srcset="./images/slide1@2x.png 2x"
+            alt="logo"
+          />
+        </div>
+        <div class="col-lg-6 carousel-content">
+          <h3>Slide title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
+          </p>
+          <button type="button" class="btn btn-secondary">button</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="row">
+        <div class="col-lg-6 carousel-image">
+          <img
+            class="img-fluid"
+            src="./images/slide1.png"
+            srcset="./images/slide1@2x.png 2x"
+            alt="logo"
+          />
+        </div>
+        <div class="col-lg-6 carousel-content">
+          <h3>Slide title 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
+          </p>
+          <button type="button" class="btn btn-secondary">button</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div class="row">
+        <div class="col-lg-6 carousel-image">
+          <img
+            class="img-fluid"
+            src="./images/slide1.png"
+            srcset="./images/slide1@2x.png 2x"
+            alt="logo"
+          />
+        </div>
+        <div class="col-lg-6 carousel-content">
+          <h3>Slide title 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
+          </p>
+          <button type="button" class="btn btn-secondary">button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(".main-carousel").flickity({
+    cellAlign: "left",
+    contain: true,
+    pageDots: true,
+    arrowShape: {
+      x0: 10,
+      x1: 60,
+      y1: 50,
+      x2: 65,
+      y2: 45,
+      x3: 20,
+    },
+  });
+</script>

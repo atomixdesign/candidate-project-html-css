@@ -1,0 +1,9 @@
+.btn {
+  text-transform: uppercase;
+  &:not(.btn-sm, .btn-lg) {
+    min-width: 14.5rem;
+  }
+  &.btn-secondary {
+    color: $white;
+  }
+}

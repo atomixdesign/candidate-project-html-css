@@ -1,20 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Candidate Project - HTML & CSS</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-</head>
-<body>
-<main>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello everyone 👋🏼!</h1>
-        <button class="btn btn-primary">Click Me!</button>
-    </div>
-    <script type="module" src="./scripts/main.ts"></script>
-</main>
-</body>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/flickity/dist/flickity.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="module" src="scripts/main.ts"></script>
+  </head>
+  <body>
+    <main>
+      <header id="mainHeader">
+        <include src="src/template-parts/header.html"></include>
+      </header>
+
+      <section id="heroBanner">
+        <include src="src/template-parts/hero-banner.html"></include>
+      </section>
+
+      <section class="module-spacer" id="infoBlock">
+        <include src="src/template-parts/info-block.html"></include>
+      </section>
+
+      <section class="module-spacer bg-lightest">
+        <include src="src/template-parts/carousel-slider.html"></include>
+      </section>
+
+      <section class="module-spacer bg-white">
+        <include src="src/template-parts/team-grid.html"></include>
+      </section>
+
+      <footer class="site-footer bg-lightest">
+        <include src="src/template-parts/footer.html"></include>
+      </footer>
+    </main>
+  </body>
 </html>
