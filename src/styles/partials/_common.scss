@@ -37,6 +37,15 @@
       .accordion-button {
         font-weight: 700;
         font-size: 0.875rem;
+        padding: {
+          top: 0.5rem;
+          bottom: 0.5rem;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 1rem;
+          padding: var(--bs-accordion-btn-padding-y)
+            var(--bs-accordion-btn-padding-x);
+        }
       }
     }
     .accordion-collapse {
@@ -44,7 +53,12 @@
         background-color: transparent;
         padding: {
           top: 0;
-          bottom: 0;
+          bottom: 1.1875rem;
+          left: 2.125rem;
+        }
+        @include media-breakpoint-up(lg) {
+          padding: var(--bs-accordion-body-padding-y)
+            var(--bs-accordion-body-padding-x);
         }
         ul {
           padding-left: 15px;
@@ -70,8 +84,8 @@ section {
     }
     @include media-breakpoint-up(sm) {
       padding: {
-        top: calc((150 / 1920) * 100vw);
-        bottom: calc((150 / 1920) * 100vw);
+        top: calc((146 / 1920) * 100vw);
+        bottom: calc((146 / 1920) * 100vw);
       }
     }
   }

@@ -20,8 +20,14 @@
   .hero-content {
     position: absolute;
     padding: {
-      left: $grid-gutter-width;
-      right: $grid-gutter-width;
+      left: calc($grid-gutter-width / 2);
+      right: calc($grid-gutter-width / 2);
+    }
+    @include media-breakpoint-up(md) {
+      padding: {
+        left: $grid-gutter-width;
+        right: $grid-gutter-width;
+      }
     }
     h1 {
       margin-bottom: 0.875em;
@@ -34,6 +40,7 @@
       @include media-breakpoint-down(sm) {
         font-size: 1.75rem;
         line-height: 1.42;
+        margin-bottom: 38px;
       }
 
       br {

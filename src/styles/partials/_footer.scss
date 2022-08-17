@@ -1,17 +1,21 @@
 footer {
   &.site-footer {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     padding: {
-      top: calc((116 / 1920) * 100vw);
-      bottom: calc((125 / 1920) * 100vw);
+      top: calc((70 / 375) * 100vw);
+      bottom: calc((58 / 375) * 100vw);
     }
     @include media-breakpoint-up(md) {
       margin-top: 0.5rem;
+      padding: {
+        top: calc((116 / 1920) * 100vw);
+        bottom: calc((125 / 1920) * 100vw);
+      }
     }
     .logo-wrapper {
       display: flex;
       justify-content: center;
-      margin-bottom: 1.75rem;
+      margin-bottom: 2.25rem;
       @include media-breakpoint-up(lg) {
         justify-content: flex-start;
         margin-bottom: 2rem;
@@ -31,7 +35,7 @@ footer {
     .accordion {
       @include media-breakpoint-up(lg) {
         @include make-row();
-        margin-bottom: 4rem;
+        margin-bottom: 3.6875rem;
       }
       .accordion-item {
         @include media-breakpoint-up(lg) {
@@ -43,11 +47,11 @@ footer {
             pointer-events: none;
           }
           .accordion-button {
-            font-size: 1rem;
             @include media-breakpoint-up(md) {
               padding: {
                 left: 0;
                 right: 0;
+                bottom: 0.8125rem;
               }
             }
             &:after {
@@ -123,6 +127,11 @@ footer {
     hr {
       border-color: $light;
       opacity: 1;
+      margin-bottom: 2.25rem;
+      margin-top: 2.75rem;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 1.75rem;
+      }
     }
     .footer-bottom-navbar {
       .collapse {
@@ -147,6 +156,9 @@ footer {
           flex-direction: row;
         }
         .nav-item {
+          @include media-breakpoint-down(md) {
+            line-height: 1.9;
+          }
           @include media-breakpoint-up(md) {
             margin-right: calc($grid-gutter-width / 4);
           }
@@ -206,11 +218,32 @@ footer {
       }
       .social-links {
         justify-content: center;
+        margin-bottom: 2.1875rem;
         @include media-breakpoint-up(md) {
           justify-content: flex-end;
+          margin-bottom: 0;
+        }
+        @include media-breakpoint-up(lg) {
+          margin-right: 12px !important;
         }
         .nav-item {
           .nav-link {
+            padding: {
+              left: 10px;
+              right: 9px;
+            }
+            @include media-breakpoint-up(md) {
+              padding: {
+                left: 5px;
+                right: 5px;
+              }
+            }
+            @include media-breakpoint-up(lg) {
+              padding: {
+                left: 10px;
+                right: 9px;
+              }
+            }
             i.fab {
               color: $secondary;
               font-size: 1.25rem;

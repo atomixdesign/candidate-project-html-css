@@ -53,7 +53,7 @@
   .flickity-page-dots {
     position: relative;
     bottom: 0;
-    margin-top: $grid-gutter-width;
+    margin-top: 2.3rem;
     @include media-breakpoint-up(xl) {
       @include make-col-ready();
       @include make-col(6);
@@ -85,13 +85,25 @@
       justify-content: flex-start;
       align-items: center;
       @include media-breakpoint-up(lg) {
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         padding-bottom: 1.5rem;
+        // padding-top: 3.55rem;
       }
       h3 {
-        @include media-breakpoint-down(lg) {
-          margin-top: 1em * 1.82;
+        margin-top: 1em * 2.35;
+        margin-bottom: 1em * 1.45;
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 1em * 1.6;
+          margin-top: 1em * 2.58;
+        }
+      }
+      p {
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 1em * 2.5;
+        }
+        @include media-breakpoint-down(md) {
+          line-height: calc(24 / 15);
         }
       }
     }
