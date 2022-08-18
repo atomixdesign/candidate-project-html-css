@@ -16,7 +16,8 @@ body {
 .mega__menu__sub {
   display: none;
 }
-.fa-minus {
+.fa-minus,
+.fa-plus {
   display: none;
 }
 .menu__hr__line {
@@ -263,12 +264,24 @@ body {
   margin-top: 5%;
   float: right;
 }
-
+.menu__items li:hover .menu__item__color {
+  color: #ccae92;
+  border-bottom: none;
+}
 /* Media Queries */
 @media screen and (max-width: 767px) {
+  .fa-plus {
+    display: block;
+  }
   .mega__menu__li,
   .contact__us {
     display: none;
+  }
+  .menu__items li:hover .open__ .fa-plus {
+    display: none;
+  }
+  .menu__items li:hover .open__ .fa-minus {
+    display: block;
   }
   .mega__menu__sub,
   .menu__hr__line {
@@ -283,10 +296,6 @@ body {
     background-color: #ccae92;
     text-align: center;
     cursor: pointer;
-  }
-  .menu__items li:hover .menu__item__color {
-    color: #ccae92;
-    border-bottom: none;
   }
 
   .contact__us__mob button:hover {
@@ -371,5 +380,94 @@ body {
   .expandable {
     background-color: #faf5f0;
     width: 100vw !important;
+  }
+}
+
+/* footer */
+.top-row {
+  position: relative;
+  max-width: 100vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-row a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-row ul {
+  list-style: none;
+}
+
+.foot__menu__items {
+  display: flex;
+  align-items: center;
+}
+
+.foot__menu__items li {
+  padding: 0.5rem 1rem;
+}
+.foot__menu__items a {
+  transition: color 0.3s ease-in-out;
+}
+
+.foot__menu__items li:hover .foot__menu__item {
+  color: #ccae92;
+}
+
+.footer__dropdown {
+  position: relative;
+}
+.footer__dropdown__menu {
+  position: relative;
+  padding-left: 0 !important;
+  left: -1vw !important;
+}
+.footer__menu__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__dropdown {
+    width: 90vw;
+  }
+  .footer__dropdown .fas {
+    position: absolute;
+    right: 0;
+    top: 30%;
+  }
+  .top-row .foot__menu__items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .top-row {
+    align-items: flex-start;
+  }
+  .footer__dropdown__menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3 ease;
+  }
+  .footer__dropdown:hover .footer__dropdown__menu {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__dropdown:hover .fa-plus {
+    display: none;
+  }
+  .footer__dropdown:hover .fa-minus {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 5%;
   }
 }

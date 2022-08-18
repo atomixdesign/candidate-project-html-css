@@ -9,7 +9,6 @@ html {
   margin: 0;
 }
 
-
 .hero-image {
   background-image: url("../images/Banner background.png");
   height: 90%;
@@ -93,85 +92,84 @@ html {
     }
   }
 }
-.carousel-section{
-height: 50wh;
-background-color: #F7F7F7;
-padding-bottom: 10Wh;
-.carousel-sect-head{
-  padding-top: 5%;
-  text-align: center;
-  font-size: 34px ;
-}
-.carousel {
-	margin-top: 8%;
-
-.carousel-cell {
-	width: 100%;
-
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 5%;
-  }
-  .carousel-content{
-    padding-bottom: 5%;
-    display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
-    flex-direction: row;
-    @media screen and (max-width: 767px) {
-      flex-direction:column;
-      margin-left: 8%;
-      margin-right: 7%;
-    }
-  .caorusel-image{
-width: 100%;
-  }
-.c-item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 5%;
-  @media screen and (max-width: 767px) {
-    
-    margin-left: 0%;
-  }
-  .carousel-head{
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
-  }
-  .carousel-text{
-    margin-top: 5%;
-
-  }
-.carousel-button{
-  margin-top: 5%;
-
-  @media screen and (max-width: 767px) {
+.carousel-section {
+  height: 50wh;
+  background-color: #f7f7f7;
+  padding-bottom: 10Wh;
+  .carousel-sect-head {
+    padding-top: 5%;
     text-align: center;
+    font-size: 34px;
   }
-  button {
-    border: 1px solid transparent;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: white;
-    background-color: #{$primary};
-    text-align: center;
-    cursor: pointer;
+  .carousel {
+    margin-top: 8%;
 
-    &:hover {
-      background-color: white;
-      color: #{$primary};
-      border: 1px solid #{$primary};
-    }}
-}
-}
+    .carousel-cell {
+      width: 100%;
+
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      @media screen and (max-width: 767px) {
+        padding-bottom: 5%;
+      }
+      .carousel-content {
+        padding-bottom: 5%;
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+        flex-direction: row;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          margin-left: 8%;
+          margin-right: 7%;
+        }
+        .caorusel-image {
+          width: 100%;
+        }
+        .c-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 5%;
+          @media screen and (max-width: 767px) {
+            margin-left: 0%;
+          }
+          .carousel-head {
+            @media screen and (max-width: 767px) {
+              text-align: center;
+            }
+          }
+          .carousel-text {
+            margin-top: 5%;
+          }
+          .carousel-button {
+            margin-top: 5%;
+
+            @media screen and (max-width: 767px) {
+              text-align: center;
+            }
+            button {
+              border: 1px solid transparent;
+              outline: 0;
+              display: inline-block;
+              padding: 10px 25px;
+              color: white;
+              background-color: #{$primary};
+              text-align: center;
+              cursor: pointer;
+
+              &:hover {
+                background-color: white;
+                color: #{$primary};
+                border: 1px solid #{$primary};
+              }
+            }
+          }
+        }
+      }
+    }
   }
-}
-}
 }
 .team-sect {
   .ts-heading {
@@ -241,29 +239,24 @@ footer {
     }
   }
   .top-row {
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     @media screen and (max-width: 767px) {
       flex-direction: column;
     }
-    .footer-section {
-      flex-direction: column;
+    // .footer-section {
+    //   flex-direction: column;
 
-      .fs-header {
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 25px;
-      }
-      .fs-content {
-        font-size: 15px;
-        @media screen and (max-width: 767px) {
-          display: none;
-        }
-      }
-    }
+    //   .fs-header {
+    //     font-size: 16px;
+    //     font-weight: 600;
+    //     margin-bottom: 25px;
+    //   }
+    //   .fs-content {
+    //     font-size: 15px;
+    //     @media screen and (max-width: 767px) {
+    //       display: none;
+    //     }
+    //   }
+    // }
   }
   hr {
     // color: #EFEAE5;
