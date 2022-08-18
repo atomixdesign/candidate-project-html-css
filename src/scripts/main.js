@@ -1,9 +1,16 @@
-// Toggle Mobile Menu
-const open_menu = document.querySelector(".open-menu");
-const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const menuItems = document.querySelector(".menu__items");
+const expandBtn = document.querySelectorAll(".expand-btn");
 
-open_menu.addEventListener("click", toggleMenu);
+// humburger toggle
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("open__");
+  menuItems.classList.toggle("open__");
+});
 
-function toggleMenu() {
-  navbar.classList.toggle("is-active");
-}
+// mobile menu expand
+expandBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("open__");
+  });
+});
