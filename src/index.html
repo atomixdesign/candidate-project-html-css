@@ -1,20 +1,516 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Candidate Project - HTML & CSS</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-</head>
-<body>
-<main>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello everyone 👋🏼!</h1>
-        <button class="btn btn-primary">Click Me!</button>
-    </div>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
     <script type="module" src="./scripts/main.ts"></script>
-</main>
-</body>
+    <!-- 1. Header with a menu (global sections) -->
+    <header class="header__">
+      <a href="#" class="logo__"
+        ><img src="./images/COMPANY LOGO.png" alt=""
+      /></a>
+
+      <nav>
+        <ul class="menu__items">
+          <li class="mega__menu__li">
+            <a href="#" class="menu__item menu__item__color">About</a>
+            <div class="mega__menu">
+              <div class="content__">
+                <div class="col__">
+                  <section>
+                    <a href="#" class="img__wrapper"
+                      ><span class="img__"
+                        ><img src="./images/Mask Group 2.png" alt="" /></span
+                    ></a>
+                  </section>
+                </div>
+                <div class="col__">
+                  <section>
+                    <h2>About sample link 1</h2>
+                    <ul class="mega__links">
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 1</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 2</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 3</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 4</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 5</a
+                        >
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="col__">
+                  <section>
+                    <h2>About sample link 2</h2>
+                    <ul class="mega__links">
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 1</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 2</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 3</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 4</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="menu__item"
+                          >About sub sample links 5</a
+                        >
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown__ mega__menu__sub">
+            <a href="#" class="menu__item expand-btn menu__item__color"
+              >About <i class="fas fa-plus"></i><i class="fas fa-minus"></i>
+              <hr class="menu__hr__line" />
+            </a>
+            <ul class="dropdown__menu expandable">
+              <li class="dropdown__ dropdown__right">
+                <a href="#" class="menu__item expand-btn"
+                  >About sample link 1<i class="fas fa-plus"></i
+                  ><i class="fas fa-minus"></i>
+                  <hr class="menu__hr__line" />
+                </a>
+                <ul class="menu__right expandable">
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 2</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 3</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 4</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 5</a
+                    >
+                  </li>
+                  <hr class="menu__hr__line" />
+                </ul>
+              </li>
+              <li class="dropdown__ dropdown__right">
+                <a href="#" class="menu__item expand-btn"
+                  >About sample link 2<i class="fas fa-plus"></i
+                  ><i class="fas fa-minus"></i>
+                </a>
+                <ul class="menu__right expandable">
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 2</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 3</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 4</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="menu__item sub__menu__item"
+                      >About sub sample links 5</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="menu__item menu__item__color"
+              >News
+              <hr class="menu__hr__line"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="menu__item menu__item__color"
+              >FAQs
+              <hr class="menu__hr__line"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" class="menu__item menu__item__color"
+              >Services
+              <hr class="menu__hr__line"
+            /></a>
+          </li>
+
+          <div class="contact__us__mob"><button>CONTACT US</button></div>
+        </ul>
+      </nav>
+      <div class="contact__us"><button>CONTACT US</button></div>
+      <div class="menu-btn">
+        <div class="menu-btn__lines"></div>
+      </div>
+    </header>
+    <!--    2. Home banner -->
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 40px">
+          The ultimate atomix starter theme to help your business grow faster!
+        </h1>
+        <button>CONTACT US</button>
+      </div>
+      <div class="hero-down-button">
+        <a href="#tc-section"> <img src="../src/images/Down button.svg" /></a>
+      </div>
+    </div>
+    <!--    3. Three column content section -->
+    <div class="three-column">
+      <a name="tc-section"></a>
+      <div class="tc-heading">Three column with image</div>
+      <div class="tc-content">
+        <div class="tc-column">
+          <p class="image-head">
+            Lorem ipsum dolor sit amet conse tetur sadipiscing elite dolore.
+          </p>
+          <img src="./images/Mask Group 3.png" />
+        </div>
+        <div class="tc-column">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam.<br /><br />
+          Et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+          amet, consetetur sadipscing elitr. Et justo duo dolores et ea rebum.
+          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+          dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+        </div>
+        <div class="tc-column">
+          >Lorem ipsum dolor sit amet, consetetur<br />
+          >Sadipscing elitr, sed diam nonumy<br />
+          >Eirmod tempor invidunt ut labore et dolore<br />
+          >magna aliquyam erat, sed diam voluptua<br /><br />
+
+          Et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+          amet, consetetur sadipscing elitr. Et justo duo dolores et ea rebum.
+          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+          dolor sit amet. Lorem ipsum dolor sit amet, consetetur.
+        </div>
+      </div>
+    </div>
+
+    <!--    4. Carousel with a slider. We recommend using [Flickity](https://flickity.metafizzy.co/),
+      but you can use any JavaScript slider carousel here which you are familiar with -->
+    <div class="carousel-section">
+      <div class="carousel-sect-head">Carousel Section</div>
+      <div
+        class="carousel"
+        data-flickity='{ "autoPlay": true,"fullscreen":true }'
+      >
+        <div class="carousel-cell" style="background-color: #f7f7f7">
+          <div class="carousel-content">
+            <div class="caorusel-image">
+              <img src="./images/Mask Group 2.png" />
+            </div>
+            <div class="c-item">
+              <div class="carousel-head">Slide title</div>
+              <div class="carousel-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </div>
+              <div class="carousel-button">
+                <button>BUTTON</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell" style="background-color: #f7f7f7">
+          <div class="carousel-content">
+            <div class="caorusel-image">
+              <img src="./images/Mask Group 2.png" />
+            </div>
+            <div class="c-item">
+              <div class="carousel-head">Slide title</div>
+              <div class="carousel-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </div>
+              <div class="carousel-button">
+                <button>BUTTON</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell" style="background-color: #f7f7f7">
+          <div class="carousel-content">
+            <div class="caorusel-image">
+              <img src="./images/Mask Group 2.png" />
+            </div>
+            <div class="c-item">
+              <div class="carousel-head">Slide title</div>
+              <div class="carousel-text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum.
+              </div>
+              <div class="carousel-button">
+                <button>BUTTON</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    5. Team grid layout -->
+    <div class="team-sect">
+      <div class="ts-heading">Team Section</div>
+      <div class="ts-content">
+        <div class="ts-column">
+          <div class="ts-desc">
+            <img src="./images/Blog image.png" />
+            <p class="image-position">Managing Director</p>
+            <p class="image-name">Kym Williams</p>
+          </div>
+        </div>
+        <div class="ts-column">
+          <div class="ts-desc">
+            <img src="./images/Blog image-1.png" />
+            <p class="image-position">Associate</p>
+            <p class="image-name">Angus Mitchell</p>
+          </div>
+        </div>
+        <div class="ts-column">
+          <div class="ts-desc">
+            <img src="./images/Blog image-2.png" />
+            <p class="image-position">Associate</p>
+            <p class="image-name">Anita Payne</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-sect">
+      <div class="ts-content">
+        <div class="ts-column">
+          <div class="ts-desc">
+            <img src="./images/Blog image-3.png" />
+            <p class="image-position">Managing Director</p>
+            <p class="image-name">Kym Williams</p>
+          </div>
+        </div>
+        <div class="ts-column">
+          <div class="ts-desc">
+            <img src="./images/Blog image-4.png" />
+            <p class="image-position">Associate</p>
+            <p class="image-name">Angus Mitchell</p>
+          </div>
+        </div>
+        <div class="ts-column">
+          <div class="ts-desc">
+            <img src="./images/Blog image-5.png" />
+            <p class="image-position">Associate</p>
+            <p class="image-name">Anita Payne</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    6. Footer with menu links (global sections) -->
+    <footer>
+      <div class="footer-logo"><img src="./images/COMPANY LOGO.png" /></div>
+      <div class="top-row">
+        <div class="foot__nav">
+          <ul class="foot__menu__items">
+            <li class="footer__dropdown">
+              <a href="#1" class="foot__menu__item"
+                >About<i class="fas fa-plus"></i><i class="fas fa-minus"></i
+              ></a>
+              <ul class="footer__dropdown__menu">
+                <li>
+                  <a href="#1" class="footer__menu__item">About menu item 1</a>
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item">About menu item 2</a>
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item">About menu item 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__dropdown">
+              <a href="#1" class="foot__menu__item"
+                >Services<i class="fas fa-plus"></i><i class="fas fa-minus"></i
+              ></a>
+              <ul class="footer__dropdown__menu">
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >Services menu item 1</a
+                  >
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >Services menu item 2</a
+                  >
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >Services menu item 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="footer__dropdown">
+              <a href="#1" class="foot__menu__item"
+                >footer links 1<i class="fas fa-plus"></i
+                ><i class="fas fa-minus"></i
+              ></a>
+              <ul class="footer__dropdown__menu">
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >footer links item 1</a
+                  >
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >footer links item 2</a
+                  >
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >footer links item 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="footer__dropdown">
+              <a href="#1" class="foot__menu__item"
+                >Footer links 2<i class="fas fa-plus"></i
+                ><i class="fas fa-minus"></i
+              ></a>
+              <ul class="footer__dropdown__menu">
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >footer links item 1</a
+                  >
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >footer links item 2</a
+                  >
+                </li>
+                <li>
+                  <a href="#1" class="footer__menu__item"
+                    >footer links item 3</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="bottom-row">
+        <div class="company-links-sect">
+          <div class="company-links">© 2022 Company Inc.</div>
+          <div class="company-links">Terms and conditions</div>
+          <div class="company-links">Privacy policy</div>
+          <div class="company-links">Website by atomix</div>
+        </div>
+        <div class="company-social-sect">
+          <div class="company-social">
+            <img src="../src/images/facebook.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/twitter.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/instagram.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/linkedin.svg" />
+          </div>
+          <div class="company-social">
+            <img src="../src/images/youtube.svg" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
 </html>

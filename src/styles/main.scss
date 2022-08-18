@@ -1,3 +1,308 @@
-$primary: #f00;
+$primaryrgb: rgba(204, 174, 146, 1);
+$primary: #ccae92;
 
 @import "bootstrap/scss/bootstrap";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-image {
+  background-image: url("../images/Banner background.png");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    right: 24%;
+    color: black;
+    @media screen and (max-width: 767px) {
+      top: 25%;
+    }
+
+    button {
+      border: 1px solid transparent;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      margin-top: 40px;
+      color: white;
+      background-color: #{$primary};
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+        color: #{$primary};
+        border: 1px solid #{$primary};
+      }
+    }
+  }
+  .hero-down-button {
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    right: 50%;
+  }
+}
+
+.three-column {
+  .tc-heading {
+    text-align: center;
+    padding-top: 5%;
+    font: normal normal bold 34px/50px Montserrat;
+  }
+  .tc-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: baseline;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+
+    .tc-column {
+      margin: 10px;
+      padding: 20px;
+      flex-basis: 33%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+      }
+      .image-head {
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.carousel-section {
+  height: 50wh;
+  background-color: #f7f7f7;
+  padding-bottom: 10Wh;
+  .carousel-sect-head {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 34px;
+  }
+  .carousel {
+    margin-top: 8%;
+
+    .carousel-cell {
+      width: 100%;
+
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      @media screen and (max-width: 767px) {
+        padding-bottom: 5%;
+      }
+      .carousel-content {
+        padding-bottom: 5%;
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+        flex-direction: row;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          margin-left: 8%;
+          margin-right: 7%;
+        }
+        .caorusel-image {
+          width: 100%;
+        }
+        .c-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 5%;
+          @media screen and (max-width: 767px) {
+            margin-left: 0%;
+          }
+          .carousel-head {
+            @media screen and (max-width: 767px) {
+              text-align: center;
+            }
+          }
+          .carousel-text {
+            margin-top: 5%;
+          }
+          .carousel-button {
+            margin-top: 5%;
+
+            @media screen and (max-width: 767px) {
+              text-align: center;
+            }
+            button {
+              border: 1px solid transparent;
+              outline: 0;
+              display: inline-block;
+              padding: 10px 25px;
+              color: white;
+              background-color: #{$primary};
+              text-align: center;
+              cursor: pointer;
+
+              &:hover {
+                background-color: white;
+                color: #{$primary};
+                border: 1px solid #{$primary};
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.team-sect {
+  .ts-heading {
+    text-align: center;
+    padding-top: 5%;
+    font: normal normal bold 34px/50px Montserrat;
+  }
+  .ts-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: baseline;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+
+    .ts-column {
+      margin: 10px;
+      padding: 10px;
+      flex-basis: 33%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+      }
+      .image-position {
+        font-size: 13px;
+        font-weight: 600;
+        color: #{$primary};
+        padding-left: 25px;
+        padding-top: 25px;
+        margin-bottom: 5px;
+      }
+      .image-name {
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 25px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ts-desc {
+  margin-right: 20px;
+  background-color: #f7f7f7;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #f7f7f7;
+  margin-top: 5%;
+
+  .footer-logo {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  .top-row {
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    // .footer-section {
+    //   flex-direction: column;
+
+    //   .fs-header {
+    //     font-size: 16px;
+    //     font-weight: 600;
+    //     margin-bottom: 25px;
+    //   }
+    //   .fs-content {
+    //     font-size: 15px;
+    //     @media screen and (max-width: 767px) {
+    //       display: none;
+    //     }
+    //   }
+    // }
+  }
+  hr {
+    // color: #EFEAE5;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .bottom-row {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+    .company-links-sect {
+      display: flex;
+      width: 80%;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10%;
+      }
+      .company-links {
+        padding-right: 5%;
+        flex-direction: row;
+        @media screen and (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+          padding: 1%;
+        }
+      }
+    }
+    .company-social-sect {
+      width: 20%;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+      }
+      .company-social {
+        float: right;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
+  }
+}
